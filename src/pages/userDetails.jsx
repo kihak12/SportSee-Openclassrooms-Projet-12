@@ -33,7 +33,7 @@ export const UserDetails = () => {
 
                             <div className={styles.statisticsContainer}>
                                 <h1>card</h1>
-                                <Performance />
+                                <Performance userId={id} />
                                 <Score score={user.data.score} />
                             </div>
 

@@ -1,12 +1,12 @@
 import styles from "./DailyActivity.module.css";
 import {string} from "prop-types";
-import {getDailyActivity} from "../../api/BackendCaller.jsx";
+import {getUserDailyActivity} from "../../api/BackendCaller.jsx";
 import {Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts";
 import {colorGraphMain, colorGraphSecondary, colorWhite, colorGraphLightGray} from "../../shared/variables.module.scss";
 import {DailyActivityTooltip} from "../daily-activity-tooltip/DailyActivityTooltip.jsx";
 
 export const DailyActivity = ({userId}) => {
-    const dailyActivities  = getDailyActivity(userId).data;
+    const dailyActivities  = getUserDailyActivity(userId).data;
     return (
         <>
             <div className={styles.content}>

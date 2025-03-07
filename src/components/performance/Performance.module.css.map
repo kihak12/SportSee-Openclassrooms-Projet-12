@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Performance.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../shared/variables.module.scss","Performance.module.scss"],"names":[],"mappings":"AAgBA;EACE,WAjBW;EAkBX,gBAjBgB;EAkBhB,YAjBY;EAkBZ,cAjBe;EAkBf,YAjBY;EAkBZ,kBAjBkB;EAkBlB,gBAjBiB;EAkBjB,WAjBW;EAkBX,gBAhBiB;EAiBjB,qBAhBsB;EAiBtB,qBAhBuB;EAiBvB,eAhBgB;EAiBhB,UAfU;;;ACZZ;EACE;EACA,kBDMsB;ECLtB;EACA","file":"Performance.module.css"}

@@ -1,0 +1,9 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  width: 100%;
+  background-color: variables.$color-graph-secondary;
+  border-radius: 5px;
+  margin: auto;
+}
+

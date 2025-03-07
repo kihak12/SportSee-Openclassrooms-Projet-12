@@ -1,3 +1,24 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
 
+.content {
+  width: 100%;
+  background-color: #282d30;
+  border-radius: 5px;
+  margin: auto;
+}
 
 /*# sourceMappingURL=Performance.module.css.map */
