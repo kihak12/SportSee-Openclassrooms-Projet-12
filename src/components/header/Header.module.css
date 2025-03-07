@@ -1,0 +1,48 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
+
+.content {
+  padding: 16px 24px;
+  background-color: #020203;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content .headerIcon {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+}
+.content .headerIcon h1 {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: #ff0101;
+}
+.content .nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.content .nav a {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

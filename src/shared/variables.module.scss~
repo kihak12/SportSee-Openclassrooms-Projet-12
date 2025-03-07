@@ -1,0 +1,31 @@
+$color-main: #ff0101;
+$color-secondary: #020203;
+$color-black: #000000;
+$color-black-50: #00000050;
+$color-white: #FFFFFF;
+$color-transparent: #FFFFFF00;
+$color-light-gray: #FBFBFB;
+$color-gray: #74798C;
+
+$color-graph-main: #e60000;
+$color-graph-secondary: #282d30;
+$color-graph-light-gray: #DFDFDF;
+$color-graph-red: #ff0101;
+
+$font-main: Montserrat;
+
+:export {
+  colorMain: $color-main;
+  colorSecondary: $color-secondary;
+  colorBlack: $color-black;
+  colorBlack50: $color-black-50;
+  colorWhite: $color-white;
+  colorTransparent: $color-transparent;
+  colorLightGray: $color-light-gray;
+  colorGray: $color-gray;
+  colorGraphMain: $color-graph-main;
+  colorGraphSecondary: $color-graph-secondary;
+  colorGraphLightGray: $color-graph-light-gray;
+  colorGraphRed: $color-graph-red;
+  fontMain: $font-main;
+}

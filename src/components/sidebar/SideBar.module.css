@@ -1,0 +1,49 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
+
+.content {
+  padding-bottom: 59px;
+  background-color: #020203;
+  min-height: calc(100vh - 90px);
+  min-height: calc(100svh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+  width: 117px;
+}
+.content .icons {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.content p {
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+  color: #FFFFFF;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=SideBar.module.css.map */

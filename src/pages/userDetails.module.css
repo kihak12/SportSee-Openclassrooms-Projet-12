@@ -1,0 +1,62 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
+
+.container .content {
+  max-width: 1300px;
+  margin: 50px auto;
+  border: #020203 1px solid;
+  width: 100%;
+}
+.container .content .header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .content .header .head {
+  font-size: 48px;
+}
+.container .content .header .head .accentColor {
+  color: #ff0101;
+}
+.container .content .header .subHeader {
+  font-size: 18px;
+  font-weight: 400;
+}
+.container .content .statisticsContainer {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.container .content .statisticsContainer article {
+  width: 100%;
+  height: 100%;
+}
+.container .content .statisticsContainer .grid2 {
+  grid-column: span 2/span 2;
+}
+.container .content .mt50 {
+  margin-top: 50px;
+}
+.container .content .statisticsCards {
+  grid-column: span 1/span 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 39px;
+}
+
+/*# sourceMappingURL=userDetails.module.css.map */

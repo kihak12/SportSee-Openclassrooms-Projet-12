@@ -1,0 +1,33 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  padding: 16px 24px;
+  background-color: variables.$color-secondary;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  .headerIcon {
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+    h1 {
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      color: variables.$color-main;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    a {
+      font-size: 22px;
+      color: variables.$color-white;
+      text-decoration: none;
+    }
+  }
+}

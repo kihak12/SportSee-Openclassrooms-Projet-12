@@ -1,0 +1,66 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
+
+.content {
+  width: 100%;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 32px;
+  margin: auto;
+}
+.content .chartTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.content .chartTitleContainer .title {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.content .chartTitleContainer .statisticContainer {
+  display: inline-flex;
+  column-gap: 30px;
+}
+.content .chartTitleContainer .statisticContainer .statisticLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 4px;
+}
+.content .chartTitleContainer .statisticContainer .statisticLine .statisticTitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #74798C;
+}
+.content .chartTitleContainer .statisticContainer .statisticLine .dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px 0 5px;
+}
+.content .chartTitleContainer .statisticContainer .statisticLine .dot.main {
+  background-color: #e60000;
+}
+.content .chartTitleContainer .statisticContainer .statisticLine .dot.secondary {
+  background-color: #282d30;
+}
+
+/*# sourceMappingURL=DailyActivity.module.css.map */

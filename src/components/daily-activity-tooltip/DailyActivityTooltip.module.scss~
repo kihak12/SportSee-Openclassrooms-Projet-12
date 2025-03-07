@@ -1,0 +1,7 @@
+.content {
+  .item {
+    padding: 10px;
+    font-size: 7px;
+    font-weight: 500;
+  }
+}

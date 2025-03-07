@@ -1,0 +1,71 @@
+:export {
+  colorMain: #ff0101;
+  colorSecondary: #020203;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #FBFBFB;
+  colorGray: #74798C;
+  colorGraphMain: #e60000;
+  colorGraphSecondary: #282d30;
+  colorGraphLightGray: #DFDFDF;
+  colorGraphRed: #ff0000;
+  fontMain: Montserrat;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 24px 30px;
+}
+.content .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #282d30;
+}
+.content .scoreGraphContainer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+.content .scoreGraphContainer .scoreGraphDetailsContainer {
+  position: absolute;
+  z-index: 1;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+.content .scoreGraphContainer .scoreGraphDetailsContainer .scoreGraphDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+}
+.content .scoreGraphContainer .scoreGraphDetailsContainer .scoreGraphDetails .title {
+  color: #282D30;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  width: 70%;
+}
+.content .scoreGraphContainer .scoreGraphDetailsContainer .scoreGraphDetails .subTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #74798C;
+  width: 70%;
+}
+
+/*# sourceMappingURL=Score.module.css.map */

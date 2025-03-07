@@ -1,0 +1,57 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  width: 100%;
+  background-color: variables.$color-light-gray;
+  border-radius: 5px;
+  padding: 32px;
+  margin: auto;
+
+  .chartTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4 0px;
+
+    .title {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .statisticContainer {
+      display: inline-flex;
+      column-gap: 30px;
+
+      .statisticLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        column-gap: 4px;
+
+        .statisticTitle {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          color: variables.$color-gray;
+        }
+
+        .dot {
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin: 0 5px 0 5px;
+
+          &.main {
+            background-color: variables.$color-graph-main;
+          }
+          &.secondary {
+            background-color: variables.$color-graph-secondary;
+          }
+        }
+      }
+    }
+  }
+}

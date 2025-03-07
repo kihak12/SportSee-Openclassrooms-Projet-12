@@ -1,0 +1,36 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  padding-bottom: 59px;
+  background-color: variables.$color-secondary;
+  min-height: calc(100vh - 90px);
+  min-height: calc(100svh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+  width: 117px;
+
+  .icons {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  p {
+    margin: 0 auto;
+    display:block;
+    font-size: 12px;
+    line-height: 24px;
+    color: variables.$color-white;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+  }
+
+}
