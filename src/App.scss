@@ -7,3 +7,27 @@
   font-family: "Roboto", serif;
   font-weight: 500;
 }
+
+.skeleton {
+  background-color: #ebebeb;
+  width: 100%;
+  &.rounded {
+    border-radius: 7px;
+  }
+}
+
+.pulseAnimation {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

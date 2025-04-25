@@ -2,8 +2,10 @@
   colorMain: #ff0101;
   colorSecondary: #020203;
   colorBlack: #000000;
-  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorBlack50: rgba(0, 0, 0, 0.5019607843);
   colorWhite: #FFFFFF;
+  colorWhite75: rgba(255, 255, 255, 0.7490196078);
+  colorWhite25: rgba(255, 255, 255, 0.2509803922);
   colorTransparent: rgba(255, 255, 255, 0);
   colorLightGray: #FBFBFB;
   colorGray: #74798C;
@@ -61,6 +63,28 @@
 }
 .content .chartTitleContainer .statisticContainer .statisticLine .dot.secondary {
   background-color: #282d30;
+}
+
+.error {
+  width: 100%;
+  height: 220px;
+  background-color: #FBFBFB;
+  padding: 20% 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+.error h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff0101;
+}
+.error p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=DailyActivity.module.css.map */

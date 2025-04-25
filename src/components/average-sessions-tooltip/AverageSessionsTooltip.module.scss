@@ -1,0 +1,13 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  padding: 1px 7px;
+  background-color: variables.$color-white;
+  color: variables.$color-black;
+
+  h1 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

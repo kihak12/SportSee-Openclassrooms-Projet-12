@@ -17,32 +17,14 @@
 }
 
 .content {
-  width: 100%;
-  background-color: #282d30;
-  border-radius: 5px;
-  margin: auto;
+  padding: 1px 7px;
+  background-color: #FFFFFF;
+  color: #000000;
 }
-
-.error {
-  width: 100%;
-  height: 100%;
-  background-color: #FBFBFB;
-  padding: 20% 20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
+.content h1 {
   text-align: center;
-}
-.error h1 {
-  font-size: 26px;
-  font-weight: bold;
-  color: #ff0101;
-}
-.error p {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
 }
 
-/*# sourceMappingURL=Performance.module.css.map */
+/*# sourceMappingURL=AverageSessionsTooltip.module.css.map */

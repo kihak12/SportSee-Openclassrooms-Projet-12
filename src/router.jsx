@@ -8,6 +8,6 @@ export const router = createBrowserRouter([
     },
     {
         path: "*",
-        element: <Navigate to="/user/invalid" replace />
+        element: <Navigate to="/user/18" replace />
     },
 ])

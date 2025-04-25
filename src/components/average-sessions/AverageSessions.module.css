@@ -17,10 +17,22 @@
 }
 
 .content {
+  position: relative;
   width: 100%;
-  background-color: #282d30;
+  height: 100%;
+  background-color: #ff0000;
   border-radius: 5px;
-  margin: auto;
+}
+.content .title {
+  position: absolute;
+  width: 100%;
+  padding: 30px 35px;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7490196078);
+}
+.content .line {
+  max-height: 100px;
 }
 
 .error {
@@ -45,4 +57,4 @@
   font-weight: 400;
 }
 
-/*# sourceMappingURL=Performance.module.css.map */
+/*# sourceMappingURL=AverageSessions.module.css.map */

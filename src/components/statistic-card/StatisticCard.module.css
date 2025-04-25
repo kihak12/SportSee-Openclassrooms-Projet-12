@@ -2,8 +2,10 @@
   colorMain: #ff0101;
   colorSecondary: #020203;
   colorBlack: #000000;
-  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorBlack50: rgba(0, 0, 0, 0.5019607843);
   colorWhite: #FFFFFF;
+  colorWhite75: rgba(255, 255, 255, 0.7490196078);
+  colorWhite25: rgba(255, 255, 255, 0.2509803922);
   colorTransparent: rgba(255, 255, 255, 0);
   colorLightGray: #FBFBFB;
   colorGray: #74798C;

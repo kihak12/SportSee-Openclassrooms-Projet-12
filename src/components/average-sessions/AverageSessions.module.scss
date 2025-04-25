@@ -1,10 +1,26 @@
 @use '../../shared/variables.module' as variables;
 
 .content {
+  position: relative;
   width: 100%;
-  background-color: variables.$color-graph-secondary;
+  height: 100%;
+  background-color: variables.$color-graph-red;
   border-radius: 5px;
-  margin: auto;
+
+
+  .title {
+    position: absolute;
+    width: 100%;
+    padding: 30px 35px;
+    font-size: 15px;
+    line-height: 24px;
+    color: variables.$color-white-75;
+  }
+
+
+  .line {
+    max-height: 100px;
+  }
 }
 
 .error {

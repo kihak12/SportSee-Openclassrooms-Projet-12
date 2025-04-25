@@ -2,8 +2,10 @@
   colorMain: #ff0101;
   colorSecondary: #020203;
   colorBlack: #000000;
-  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorBlack50: rgba(0, 0, 0, 0.5019607843);
   colorWhite: #FFFFFF;
+  colorWhite75: rgba(255, 255, 255, 0.7490196078);
+  colorWhite25: rgba(255, 255, 255, 0.2509803922);
   colorTransparent: rgba(255, 255, 255, 0);
   colorLightGray: #FBFBFB;
   colorGray: #74798C;
@@ -17,7 +19,7 @@
 .container .content {
   max-width: 1300px;
   margin: 50px auto;
-  border: #020203 1px solid;
+  padding: 10px;
   width: 100%;
 }
 .container .content .header {
@@ -57,6 +59,32 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 39px;
+}
+.container .error {
+  background-color: #FBFBFB;
+  border-radius: 7px;
+  padding: 20px 30px 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 4px 10px 0;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.container .error h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff0101;
+}
+.container .error p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container .content .statisticsContainer {
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=userDetails.module.css.map */
