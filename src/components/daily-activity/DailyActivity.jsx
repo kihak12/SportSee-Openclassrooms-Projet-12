@@ -54,18 +54,33 @@ export const DailyActivity = ({userId}) => {
                                 <BarChart data={dailyActivities.sessions} barGap={10}>
                                     <CartesianGrid vertical={false} strokeDasharray="3"/>
                                     <XAxis type="category" tickLine={false} tickSize={15} />
-                                    <YAxis type="number" orientation="right" tickLine={false} tickSize={15} color="#ffffff"/>
+                                    <YAxis
+                                        yAxisId="kilogram"
+                                        type="number"
+                                        orientation="right"
+                                        tickLine={false}
+                                        color="#ffffff"
+                                        allowDecimals={false}
+                                        domain={[dataMin => dataMin - 1, dataMax => dataMax + 1]}
+                                    />
+                                    <YAxis
+                                        hide
+                                        dataKey="calories"
+                                        yAxisId="calories"
+                                    />
                                     <Tooltip cursor={{fill: colorGraphLightGray}}
                                              content={<DailyActivityTooltip/>}
                                              contentStyle={{backgroundColor: colorGraphMain}}
                                              itemStyle={{color: colorWhite}}/>
                                     <Bar
+                                        yAxisId="kilogram"
                                         barSize={10}
                                         dataKey="kilogram"
                                         radius={[5, 5, 0, 0]}
                                         fill={colorGraphSecondary}
                                     />
                                     <Bar
+                                        yAxisId="calories"
                                         barSize={10}
                                         dataKey="calories"
                                         radius={[5, 5, 0, 0]}
