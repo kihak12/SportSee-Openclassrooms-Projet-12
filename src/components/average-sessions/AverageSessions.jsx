@@ -3,12 +3,13 @@ import {string} from "prop-types";
 import {Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts";
 import {colorWhite25, colorWhite75, colorWhite} from "../../shared/variables.module.scss";
 import {AverageSessionsTooltip} from "../average-sessions-tooltip/AverageSessionsTooltip.jsx";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {getUserAverageSessions} from "../../api/BackendCaller.jsx";
 
 export const AverageSessions = ({userId}) => {
     const [averageSessions, setAverageSessions] = useState(null);
     const [loadingError, setLoadingError] = useState(null);
+    const shadowOverlayRef = useRef(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -44,6 +45,18 @@ export const AverageSessions = ({userId}) => {
         }
     };
 
+    const displayActiveSessionShadow = (event, element) => {
+        if(element.target.tagName === 'svg' && element.target.classList.contains('recharts-surface')) {
+            if (!event.isTooltipActive) {
+                shadowOverlayRef.current.style.left = null;
+                return;
+            }
+            const width = element.target.clientWidth;
+            const left = (event.activeLabel * (width / 7) - (20 - event.activeTooltipIndex));
+            shadowOverlayRef.current.style.left = `${left}px`;
+        }
+    }
+
     return <>
     { loadingError ? (
             <div className={styles.error}>
@@ -53,8 +66,9 @@ export const AverageSessions = ({userId}) => {
         ) : averageSessions ?
         <article className={styles.content}>
             <h1 className={styles.title}>Durée moyenne des sessions</h1>
-            <ResponsiveContainer width="100%" height="100%" >
-                <LineChart data={averageSessions.sessions} >
+            <div ref={shadowOverlayRef} className={styles.shadowOverlay}></div>
+            <ResponsiveContainer width="100%" height="100%" style={{zIndex: "2", position: "relative"}} >
+                <LineChart data={averageSessions.sessions} onMouseMove={displayActiveSessionShadow} onMouseLeave={() => shadowOverlayRef.current.style.left = null}>
                     <XAxis axisLine={false} tickLine={false} padding={{ left: 10, right: 10}} dataKey="day" stroke={colorWhite75} tickFormatter={(value) => numberToDay(value)} />
                     <Tooltip content={<AverageSessionsTooltip />} cursor={false}/>
                     <Line stroke="url(#colorUv)"  activeDot={{ stroke: colorWhite25, strokeWidth: 10, fill: colorWhite }} type="natural" dataKey="sessionLength" strokeWidth={3} dot={false} />
